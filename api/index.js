@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
+const path = require('path');
 
-app.get("/express", (req, res) => res.send("Express on Vercel!"));
+app.get("/ruta", (req, res) => {res.sendFile(path.join(__dirname, '../public/express/lista.html'))});
 app.get("/cliente_servidor", (req, res) => res.send("Cliente Servidor on Vercel!"));
 app.use(express.static('public'))
 
