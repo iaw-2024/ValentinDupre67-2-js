@@ -17,7 +17,13 @@
                 </tr>                                                              
         </table>
     </div>
-    <script src="../datos.js"></script>
-    <script src="../express/express.js"></script>
+    <script>
+        fetch('/tablaDeMotos') 
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('tablaDeMotos').innerHTML = data;
+            })
+            .catch(error => console.error('Error al obtener la tabla:', error));
+    </script>
 </body>
 </html>
