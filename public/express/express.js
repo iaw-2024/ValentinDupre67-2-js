@@ -1,4 +1,4 @@
-fetch('/datos')
+fetch('/public/datos.js')
   .then(response => response.json())
   .then(data => {
     const tabla = document.getElementById('tablaDeMotos');
