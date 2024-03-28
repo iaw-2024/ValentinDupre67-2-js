@@ -1,4 +1,4 @@
-fetch('../datos.js')
+fetch('/datos')
   .then(response => response.json())
   .then(data => {
     const tabla = document.getElementById('tablaDeMotos');
@@ -11,3 +11,4 @@ fetch('../datos.js')
     });
   })
   .catch(error => console.error('Error al obtener los datos:', error));
+
