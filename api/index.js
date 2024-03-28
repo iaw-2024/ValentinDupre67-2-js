@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require('path');
-const datos = require('./datos.js');
+const datos = require('../public/datos');
 
 
 app.get("/express", (req, res) => {
@@ -10,7 +10,7 @@ app.get("/express", (req, res) => {
 
 app.get("/cliente_servidor", (req, res) => res.send("Cliente Servidor on Vercel!"));
 
-app.get("/datos", (req, res) => {
+app.get("/public/datos.js", (req, res) => {
     res.json(datos);
 });
 
