@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
 const path = require('path');
-const datos = require("../public/datos.js");
+
 
 
 app.get("/express", (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/express/lista.html'));
+    res.sendFile('../public/express/lista.html', {root: '.'});
 });
 
 app.get("/cliente_servidor", (req, res) => res.send("Cliente Servidor on Vercel!"));
