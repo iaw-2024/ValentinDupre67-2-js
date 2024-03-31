@@ -15,7 +15,7 @@ app.get("/cliente_servidor", (req, res) => {
     res.sendFile(path.join(__dirname, '../public/cliente_sevidor/index.html'));
 });
 
-app.get("/datos2", (req, res) => {
+app.get("/datos", (req, res) => {
     res.sendFile(path.join(__dirname, '../public/datos2.json'));
 });
 
