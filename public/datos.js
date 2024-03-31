@@ -20,5 +20,3 @@ let motos = [
     { marca: 'Indian', modelo: 'Scout Bobber', cilindrada: 1133, velocidadMaxima: 180, color: 'Rojo', capacidadTanque: 12.5 },
     { marca: 'Royal Enfield', modelo: 'Interceptor 650', cilindrada: 648, velocidadMaxima: 170, color: 'Plata', capacidadTanque: 13.7 }
   ];
-  
-  module.exports = datos;
