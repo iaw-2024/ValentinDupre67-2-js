@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const expressApp = require("../public/express/express.js" );
 
+app.use(expressApp);
 
 
 app.get("/express", (req, res) => {
