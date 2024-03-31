@@ -16,14 +16,7 @@
                     <th>Capacidad del Tanque(Lts)</th>
                 </tr>                                                              
         </table>
+        <!--ReemplazarPorTabla-->
     </div>
-    <script>
-        fetch('/tablaDeMotos') 
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('tablaDeMotos').innerHTML = data;
-            })
-            .catch(error => console.error('Error al obtener la tabla:', error));
-    </script>
 </body>
 </html>
