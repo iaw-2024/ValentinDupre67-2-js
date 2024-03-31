@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const path = require('path');
 const expressApp = require("../public/express/express.js" );
+const datos = require('../public/datos.js');
 
 app.use(expressApp);
 
