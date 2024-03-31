@@ -27,7 +27,7 @@ const datos = [
   ];
 
 function generarTabla(datos) {
-    let tablaHTML = '<table id="ReemplazarPorTabla">';
+    let tablaHTML = '<table id="tablaDeMotos">';
     tablaHTML += '<tr><th>Marca</th><th>Modelo</th><th>Cilindrada</th><th>Velocidad Maxima(Km/h)</th><th>Color</th><th>Capacidad del Tanque(Lts)</th></tr>';
     datos.forEach(moto => {
         tablaHTML += `<tr><td>${moto.marca}</td><td>${moto.modelo}</td><td>${moto.cilindrada}</td><td>${moto.velocidadMaxima}</td><td>${moto.color}</td><td>${moto.capacidadTanque}</td></tr>`;
@@ -45,7 +45,7 @@ app.get("/express", (req, res) => {
             return;
         }
 
-        const modifiedHTML = html.replace('<!--ReemplazarPorTabla-->', tableHTML);
+        const modifiedHTML = html.replace('<!--tablaDeMotos-->', tableHTML);
         
         res.send(modifiedHTML);
     });
