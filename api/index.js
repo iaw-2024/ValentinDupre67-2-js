@@ -11,7 +11,7 @@ app.get("/express", (req, res) => {
     res.sendFile(path.join(__dirname, '../public/express/lista.html'));
 });
 
-app.get("/cliente_servidor", (req, res) => res.send("Cliente Servidor on Vercel!"));
+app.get("/cliente_servidor", (req, res) => res.sendFile(path.join(__dirname, '../public/express/lista.html')))
 
 /* TODO preguntar si es necesartio 
 app.get("/datos", (req, res) => res.json(datos));
