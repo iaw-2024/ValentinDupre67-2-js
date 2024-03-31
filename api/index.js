@@ -16,7 +16,7 @@ app.get("/cliente_servidor", (req, res) => {
 });
 
 app.get("/datos", (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/datos2.json'));
+    res.sendFile(path.join(__dirname, '../public/datos.json'));
 });
 
 app.listen(3001, () => console.log("Server ready on port 3001."));
