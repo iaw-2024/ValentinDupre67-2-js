@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const tablaMotos = document.getElementById('cuerpoDeMotos');
 
-    fetch('http://localhost:3001/datos.js')
+    fetch('http://localhost:3001/datos.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error en la solicitud de datos');
