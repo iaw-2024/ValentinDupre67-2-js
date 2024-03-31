@@ -1,6 +1,6 @@
 window.onload = function() {
     const tablaDeMotos = document.getElementById('cuerpoDeMotos');
-
+    console.log(fetch('http://localhost:3001/datos'));
     fetch('http://localhost:3001/datos')
         .then(response => {
             if (!response.ok) {
