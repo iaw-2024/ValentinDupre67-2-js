@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const fs = require("fs");
 
-const datos = require('../datos.js');
+const datos = require('../../public/datos.js');
 
 function generarTabla(datos) {
     let tablaHTML = '<table id="ReemplazarPorTabla">';
