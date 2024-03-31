@@ -1,4 +1,3 @@
-console.log(datos);
 window.onload = function() {
   let tablaDeMotos = document.getElementById('tablaDeMotos');
 
