@@ -1,5 +1,5 @@
 window.onload = function() {
-    let tablaDeMotos = document.getElementById('tablaDeMotos');
+    const tablaDeMotos = document.getElementById('cuerpoDeMotos');
 
     fetch('http://localhost:3001/datos')
         .then(response => {
@@ -10,17 +10,17 @@ window.onload = function() {
         })
         .then(datos => {
             for (let moto of datos) {
-                let fila = document.createElement('tr');
-
-                for (let propiedad in moto) {
-                    let celda = document.createElement('td');
-                    celda.textContent = moto[propiedad];
-                    fila.appendChild(celda);
-                }
-
+                const fila = document.createElement('tr');
+                fila.innerHTML = `
+                    <td>${moto.Marca}</td>
+                    <td>${moto.Modelo}</td>
+                    <td>${moto.Cilindrada}</td>
+                    <td>${moto.VelocidadMaxima}</td>
+                    <td>${moto.Color}</td>
+                    <td>${moto.CapacidadTanque}</td>
+                `;
                 tablaDeMotos.appendChild(fila);
             }
         })
         .catch(error => console.error('Error al obtener datos:', error));
-}
-
+};
