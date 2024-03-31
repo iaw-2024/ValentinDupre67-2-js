@@ -1,4 +1,4 @@
-let motos = [
+let datos = [
     { marca: 'Yamaha', modelo: 'YZF-R1', cilindrada: 998, velocidadMaxima: 285, color: 'Azul', capacidadTanque: 17 },
     { marca: 'Honda', modelo: 'CBR1000RR', cilindrada: 1000, velocidadMaxima: 299, color: 'Rojo', capacidadTanque: 16 },
     { marca: 'Honda', modelo: 'CBR600RR', cilindrada: 600, velocidadMaxima: 252, color: 'Blanco', capacidadTanque: 18 },
