@@ -24,7 +24,7 @@ app.get("/express", (req, res) => {
             return;
         }
 
-        const modifiedHTML = html.replace('<table id="tablaDeMotos">', tableHTML);
+        const modifiedHTML = html.replace('<!--ReemplazarPorTabla-->', tableHTML);
         
         res.send(modifiedHTML);
     });
