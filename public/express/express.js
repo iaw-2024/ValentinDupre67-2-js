@@ -44,9 +44,7 @@ app.get("/express", (req, res) => {
             res.status(500).send("Error interno del servidor");
             return;
         }
-
-        const modifiedHTML = html.replace('<!--tablaDeMotos-->', tableHTML);
-        
+        const modifiedHTML = html.replace('<!--tablaDeMotos-->', tableHTML);        
         res.send(modifiedHTML);
     });
 });
