@@ -13,8 +13,9 @@ app.get("/express", (req, res) => {
 
 app.get("/cliente_servidor", (req, res) => res.send("Cliente Servidor on Vercel!"));
 
+/* TODO preguntar si es necesartio 
 app.get("/datos", (req, res) => res.json(datos));
-
+*/
 
 app.listen(3001, () => console.log("Server ready on port 3001."));
 
