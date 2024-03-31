@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const tablaMotos = document.getElementById('cuerpoDeMotos');
 
@@ -9,7 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             return response.json();
         })
-        .then(datos => {            
+        .then(datos => {
+            console.log('Datos:', datos);
             for (let moto of datos) {
                 const fila = document.createElement('tr');
                 fila.innerHTML = `
