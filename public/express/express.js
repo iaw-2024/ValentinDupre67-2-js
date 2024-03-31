@@ -1,3 +1,5 @@
+
+/*
 const express = require("express");
 const app = express();
 const fs = require("fs");
@@ -30,3 +32,4 @@ app.get("/express", (req, res) => {
 });
 
 module.exports = app;
+*/
