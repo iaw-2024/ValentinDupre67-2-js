@@ -1,7 +1,8 @@
 window.onload = function() {
     let tablaDeMotos = document.getElementById('tablaDeMotos');
-  
-    fetch('localhost:3001/datos.json')
+    URL = "http://localhost:3001/datos.json";
+    console.log(URL);
+    fetch(URL)        
       .then(response => response.json())
       .then(data => {
         for (let moto of data) {
