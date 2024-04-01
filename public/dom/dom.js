@@ -1,7 +1,7 @@
 window.onload = function() {
   const tablaDeMotos = document.getElementById('cuerpoDeMotos');
 
-  fetch('motos.json') 
+  fetch('../datos.json') 
       .then(response => {
           if (!response.ok) {
               throw new Error('Error en la solicitud de datos');
