@@ -11,14 +11,7 @@ window.onload = function() {
       .then(datos => {
           for (let moto of datos) {
               const fila = document.createElement('tr');
-              fila.innerHTML = `
-                  <td>${moto.Marca}</td>
-                  <td>${moto.Modelo}</td>
-                  <td>${moto.Cilindrada}</td>
-                  <td>${moto.VelocidadMaxima}</td>
-                  <td>${moto.Color}</td>
-                  <td>${moto.CapacidadTanque}</td>
-              `;
+              fila.innerHTML = '<td>${moto.Marca}</td><td>${moto.Modelo}</td><td>${moto.Cilindrada}</td><td>${moto.VelocidadMaxima}</td><td>${moto.Color}</td><td>${moto.CapacidadTanque}</td>';
               tablaDeMotos.appendChild(fila);
           }
       })
