@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     justify-content: center;   
-    background-color: #45230f;
+    background-color: #172121;
     text-align: center;
 }
 
@@ -25,25 +25,23 @@ h1 {
 }
 
 #tablaDeMotos th, #tablaDeMotos td {
-    border: 2.5px solid #050404;
+    border: 2.5px solid #efefef;
     padding: 8px;    
 }
 
 #tablaDeMotos th {
-    background-color: blanchedalmond;
+    background-color: #E2E1B9;
     color: rgb(0, 0, 0);
     font-size: 1.3vw;        
 }
 
 #tablaDeMotos tr:nth-child(even) {
-    background-color: #69794f;
-    color: rgb(250, 164, 35);
-    align-items: center;
-    align-self: center;
+    background-color: #7F7B82;
+    color: blanchedalmond;    
 }
 
 #tablaDeMotos tr:nth-child(odd) {
-    background-color: #354733;
+    background-color: #444554;
     color: blanchedalmond;
 }
 
