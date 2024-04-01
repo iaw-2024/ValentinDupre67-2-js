@@ -4,8 +4,7 @@ window.onload = function() {
     console.log(URL);
     fetch(URL)         
         .then(response => response.json())
-        .then(data => {
-            console.log(data)      
+        .then(data => {                 
             for (let moto of data) {
             let fila = document.createElement('tr'); 
     
