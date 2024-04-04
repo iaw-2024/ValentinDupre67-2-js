@@ -45,35 +45,21 @@ h1 {
     color: blanchedalmond;
 }
 
-@media screen and (max-width: 300px) {
-    #tablaDeMotos {
-        border: 0;
-    }
-
-    #tablaDeMotos thead {
-        display: none;
-    }
-
-    #tablaDeMotos tr {
-        margin-bottom: 10px;
-        display: block;
-        border-bottom: 2px solid #ddd;
-    }
-
-    #tablaDeMotos td {
-        display: block;
-        text-align: right;
-        font-size: 13px;
-        border-bottom: 1px dotted #ccc;
-    }
-
-    #tablaDeMotos td::before {
-        content: attr(data-label);
-        float: left;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-    .boton {
+@media screen and (max-width: 600px) {
+    .container{
         width: 100%;
+        align-content: center;
+    }
+    
+    #tablaDeMotos th, #tablaDeMotos td {        
+        font-size: 2.5vw; 
+    }   
+   
+    h1 {   
+    font-size: 7vw;   
+    }
+
+    #tablaDeMotos th, #tablaDeMotos td {        
+        padding: 5px;    
     }
 }

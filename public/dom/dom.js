@@ -1,6 +1,5 @@
 window.onload = function() {
-  let tablaDeMotos = document.getElementById('tablaDeMotos');
-
+  let tablaDeMotos = document.getElementById('tablaDom');
   fetch('../datos.json')
     .then(response => response.json())
     .then(data => {

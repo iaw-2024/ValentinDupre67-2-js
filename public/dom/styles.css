@@ -16,64 +16,53 @@ h1 {
     align-items: center;
 }
 
-#tablaDeMotos {
-    width: 50vw;   
+.tablaDeMotos {
+    width: 40vw;   
     border-collapse: collapse;
     margin-top: 2%;
     background-color: rgb(248, 255, 205);  
-    align-items: center;      
+    align-items: center;
+    justify-content: center;      
 }
 
-#tablaDeMotos th, #tablaDeMotos td {
+.tablaDeMotos th, .tablaDeMotos td {
     border: 2.5px solid #efefef;
-    padding: 8px;    
+    padding: 6px;    
 }
 
-#tablaDeMotos th {
+.tablaDeMotos th {
     background-color: #E2E1B9;
     color: rgb(0, 0, 0);
     font-size: 1.3vw;        
 }
 
-#tablaDeMotos tr:nth-child(even) {
+.tablaDeMotos tr:nth-child(even) {
     background-color: #7F7B82;
     color: blanchedalmond;    
 }
 
-#tablaDeMotos tr:nth-child(odd) {
+.tablaDeMotos tr:nth-child(odd) {
     background-color: #444554;
     color: blanchedalmond;
 }
 
-@media screen and (max-width: 300px) {
-    #tablaDeMotos {
-        border: 0;
-    }
-
-    #tablaDeMotos thead {
-        display: none;
-    }
-
-    #tablaDeMotos tr {
-        margin-bottom: 10px;
-        display: block;
-        border-bottom: 2px solid #ddd;
-    }
-
-    #tablaDeMotos td {
-        display: block;
-        text-align: right;
-        font-size: 13px;
-        border-bottom: 1px dotted #ccc;
-    }
-
-    #tablaDeMotos td::before {
-        content: attr(data-label);
-        float: left;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-    .boton {
+@media screen and (max-width: 600px) {  
+    
+    .container{
         width: 100%;
+        align-content: center;
+    }
+    
+    .tablaDeMotos th, .tablaDeMotos td {        
+        font-size: 2.5vw; 
+    }   
+   
+    h1 {   
+    font-size: 7vw;   
+    }
+
+    .tablaDeMotos th, .tablaDeMotos td {        
+        padding: 5px;    
     }
 }
+
