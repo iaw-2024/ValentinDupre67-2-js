@@ -1,4 +1,3 @@
-
 const express = require("express");
 const app = express();
 const fs = require("fs");
@@ -38,7 +37,7 @@ function generarTabla(datos) {
 
 app.get("/express", (req, res) => {
     const tableHTML = generarTabla(datos);    
-    fs.readFile("public/express/lista.html", "utf8", (err, html) => {
+    fs.readFile("../express/lista.html", "utf8", (err, html) => {
         if (err) {
             console.error("Error al leer el archivo index.html:", err);
             res.status(500).send("Error interno del servidor");

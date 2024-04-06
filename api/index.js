@@ -1,14 +1,14 @@
 const express = require("express");
 const app = express();
 const path = require('path');
-const expressApp = require("../public/express/express.js" );
+const expressApp = require("../express/express.js" );
 
 app.use(expressApp);
 
 app.use(express.static('public'));
 
 app.get("/express", (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/express/lista.html')); //TOD0 aca se tiene que llamar al js y que el js renderice los datos con html
+    res.sendFile(path.join(__dirname, '../express/lista.html')); //TOD0 aca se tiene que llamar al js y que el js renderice los datos con html
 });
 
 app.get("/cliente_servidor", (req, res) => {
