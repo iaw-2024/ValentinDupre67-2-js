@@ -1,6 +1,6 @@
 window.onload = function() {
     let tablaDeMotos = document.getElementById('tablaDeMotos');
-    URL = "https://66040fca2393662c31d081d9.mockapi.io/Motos";
+    URL = "https://66040fca2393662c31d081d9.mockapi.io/motos2";
     console.log(URL);
     fetch(URL)         
         .then(response => response.json())

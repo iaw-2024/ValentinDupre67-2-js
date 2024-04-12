@@ -1,23 +1,25 @@
 const express = require("express");
 const app = express();
 const path = require('path');
-const expressApp = require("../express/express.js" );
+const fs = require("fs");
 
-app.use(expressApp);
+const dataPath = path.join(__dirname, "datos.json");
+const datos = JSON.parse(fs.readFileSync(dataPath, "utf8"));
 
-app.use(express.static('public'));
+app.set("view engine", "ejs");
+app.set('views', path.join(__dirname, '../view'));
 
-app.get("/express", (req, res) => {
-    res.sendFile(path.join(__dirname, '../express/lista.html')); //TOD0 aca se tiene que llamar al js y que el js renderice los datos con html
-});
+app.get("/express", (req, res) => {res.render("view", { datos: datos });}); 
 
 app.get("/cliente_servidor", (req, res) => {
     res.sendFile(path.join(__dirname, '../public/cliente_sevidor/index.html'));
 });
 
 app.get("/datos", (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/datos.json'));
+    res.sendFile(path.join(__dirname, '../public/dom/datos.json'));
 });
+
+app.use(express.static('public'));
 
 app.listen(3001, () => console.log("Server ready on port 3001."));
 
